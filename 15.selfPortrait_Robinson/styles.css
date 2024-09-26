@@ -1,0 +1,39 @@
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the body and html to occupy full height and width */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Background container that holds the image and centers the text */
+.background-image {
+    background-image: url('images/self_portrait.jpeg'); /* Path to the image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Ensure no repetition of image */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    position: relative; /* For positioning the overlay text */
+}
+
+/* Style the overlay text box */
+.overlay-text {
+    background-color: blue; /* Blue background */
+    color: white; /* White text */
+    padding: 20px 40px; /* Padding around the text */
+    position: absolute; /* Allows positioning in the lower third */
+    bottom: 10%; /* Position it in the lower third */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to fully center */
+    font-size: 36px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align the text */
+}
