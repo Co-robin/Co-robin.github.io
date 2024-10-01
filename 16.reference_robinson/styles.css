@@ -1,34 +1,38 @@
-/* Full-screen setup for body and html */
+/* Reset body margins and padding to ensure full screen display */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    height: 100%;
     width: 100%;
-}
-
-/* Full-screen background image */
-body {
-    background: url('images/Black cat with neon light.jpeg') no-repeat center center fixed;
-    background-size: cover;
-}
-
-/* Dark overlay to make text stand out */
-.overlay {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for better readability */
+    position: relative;
+    overflow: hidden;
 }
 
-/* Centered text box styling */
+.fullscreen-image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+/* Text box styling - Positioned in the lower third of the screen */
 .text-box {
+    position: absolute;
+    bottom: 20%; /* Adjust to ensure it's in the lower third */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     color: white;
-    font-family: 'Arial', sans-serif;
-    font-size: 2rem;
-    background-color: rgba(255, 255, 255, 0.2); /* Light transparent background */
-    padding: 20px;
-    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 80%;
 }
