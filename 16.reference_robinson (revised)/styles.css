@@ -1,0 +1,38 @@
+/* Reset body margins and padding to ensure full screen display */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.fullscreen-image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+/* Text box styling - Positioned in the lower third of the screen */
+.text-box {
+    position: absolute;
+    bottom: 20%; /* Adjust to ensure it's in the lower third */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 80%;
+}
