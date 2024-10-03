@@ -1,0 +1,31 @@
+/* Ensure the body takes up the full screen with no margin */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* The full-screen background image */
+.overlay {
+    background-image: url('images/grasslands.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* Style for the text box in the lower third */
+.text-box {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: darkred;
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border-radius: 8px;
+}
