@@ -1,0 +1,43 @@
+/* Set the body and container to full height to ensure fullscreen image */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image fills the screen and keeps aspect ratio */
+}
+
+#text-box {
+    position: absolute;
+    bottom: 10%; /* Position text in the lower third */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better contrast */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Prevent text from being highlighted */
+#text-box p {
+    margin: 0;
+    user-select: none;
+}
