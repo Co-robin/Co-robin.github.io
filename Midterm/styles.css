@@ -1,0 +1,47 @@
+/* Set the body and html to take full screen */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-size: cover; /* Cover the entire screen */
+    background-position: center;
+    transition: background-image 0.5s ease-in-out; /* Smooth transition of background image */
+}
+
+/* Each text box will now be a small centered rectangle */
+.text-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px; /* Set width of the rectangular text box */
+    height: 200px; /* Set height of the rectangular text box */
+    margin: auto; /* Center the box */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+    text-align: center;
+    font-size: 24px;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade in/out */
+}
+
+/* To ensure the text box stays centered in the viewport */
+.text-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Style for showing the active text box */
+.text-box.show {
+    opacity: 1;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
