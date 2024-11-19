@@ -1,0 +1,36 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#videoPlayer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-box {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  cursor: pointer;
+}
