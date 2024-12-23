@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuous Sound and Video Toggle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Audio Element -->
+  <audio id="background-audio" loop>
+    <source src="ALL/SOUND.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Video Container -->
+  <div id="video-container">
+    <!-- Video 1 -->
+    <video id="video1" class="video" autoplay loop muted>
+      <source src="ALL/1.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+
+    <!-- Video 2 -->
+    <video id="video2" class="video" autoplay loop muted>
+      <source src="ALL/2.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </div>
+
+  <!-- Interaction Overlay -->
+  <div id="overlay">
+    <p>Click anywhere to start the audio and toggle videos.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
