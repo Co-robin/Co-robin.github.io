@@ -1,0 +1,76 @@
+/* Reset styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ensures the website is full-screen */
+}
+
+/* Video Container Styling */
+#video-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Video Styling */
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none; /* Hide videos by default */
+}
+
+/* Display the active video */
+.video.active {
+  display: block;
+}
+
+/* Overlay Styling */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  z-index: 10;
+}@charset "UTF-8";
+/* Reset styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ensures the website is full-screen */
+}
+
+/* Video Container Styling */
+#video-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Video Styling */
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none; /* Hide videos by default */
+}
+
+/* Display the active video */
+.video.active {
+  display: block;
+}
